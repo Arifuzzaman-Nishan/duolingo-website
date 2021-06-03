@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Card, Col, Container, Row, Table } from "react-bootstrap";
+import { Button, Col, Container, Row, Table } from "react-bootstrap";
 import AccountList from "../AccountList/AccountList";
 import bird from "../../images/bird.png";
 
@@ -32,16 +32,14 @@ const coachData = [
 ];
 
 const Coach = () => {
+  
   const [color, setColor] = useState("");
   const [name, setName] = useState("");
-  const [button, setButton] = useState(false);
 
   const handleTable = (data) => {
     setName(data.name);
     setColor("#36B0F4");
   };
-
-
 
   return (
     <div className="mt-5">
@@ -86,6 +84,7 @@ const Coach = () => {
             </div>
           </Col>
           <Col md={4}>
+            {/* this is the account list side bar */}
             <AccountList />
           </Col>
         </Row>

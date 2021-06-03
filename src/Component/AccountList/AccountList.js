@@ -1,50 +1,40 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useHistory,
-} from "react-router-dom";
-
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const listTextData = [
-    {
-      name: "Account",
-      path: '/setting/account'
-    },
-    {
-      name: "Learning Language",
-    },
-    {
-      name: "Profile",
-    },
-    {
-      name: "Password",
-    },
-    {
-      name: "Duolingo Plus",
-    },
-    {
-      name: "Notification",
-    },
-    {
-      name: "Coach",
-      path: "/setting/coach",
-    },
-    {
-      name: "Progress Sharing",
-    },
-    {
-      name: "Privacy",
-    },
-  ];
+  {
+    name: "Account",
+    path: "/setting/account",
+  },
+  {
+    name: "Learning Language",
+  },
+  {
+    name: "Profile",
+  },
+  {
+    name: "Password",
+  },
+  {
+    name: "Duolingo Plus",
+  },
+  {
+    name: "Notification",
+  },
+  {
+    name: "Coach",
+    path: "/setting/coach",
+  },
+  {
+    name: "Progress Sharing",
+  },
+  {
+    name: "Privacy",
+  },
+];
 
-const AccountList = (props) => {
-
-
+const AccountList = () => {
   return (
     <div>
       <Card className="ml-auto p-5" style={{ width: "21rem" }}>
@@ -60,11 +50,13 @@ const AccountList = (props) => {
         </h6>
 
         <ul>
-          {
-              listTextData.map(data => <li className='list bold'>
-                  <Link style={{textDecoration:'none'}} to = {data.path}>{data.name}</Link>
-              </li> )
-          }
+          {listTextData.map((data) => (
+            <li className="list bold">
+              <Link style={{ textDecoration: "none" }} to={data.path}>
+                {data.name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </Card>
     </div>
