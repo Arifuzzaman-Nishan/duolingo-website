@@ -62,7 +62,7 @@ const AccountList = (props) => {
         <ul>
           {
               listTextData.map(data => <li className='list bold'>
-                  <Link to = {data.path}>{data.name}</Link>
+                  <Link style={{textDecoration:'none'}} to = {data.path}>{data.name}</Link>
               </li> )
           }
         </ul>

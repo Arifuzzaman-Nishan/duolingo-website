@@ -1,10 +1,11 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import NavigationBar from "./Component/NavigationBar/NavigationBar";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Component/Home/Home";
 import Setting from "./Component/Setting/Setting";
 import Coach from "./Component/Coach/Coach";
+import Footer from "./Footer/Footer";
 
 const App = () => {
   return (
@@ -25,6 +26,9 @@ const App = () => {
             <Home></Home>
           </Route>
         </Switch>
+        <Container>
+          <Footer></Footer>
+        </Container>
       </Router>
     </div>
   );

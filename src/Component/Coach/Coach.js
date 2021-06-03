@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, Col, Container, Row, Table } from "react-bootstrap";
+import { Button, Card, Col, Container, Row, Table } from "react-bootstrap";
 import AccountList from "../AccountList/AccountList";
 import bird from "../../images/bird.png";
 
@@ -33,15 +33,15 @@ const coachData = [
 
 const Coach = () => {
   const [color, setColor] = useState("");
-  const [name,setName] = useState('');
-  const [button,setButton] = useState(false);
+  const [name, setName] = useState("");
+  const [button, setButton] = useState(false);
 
   const handleTable = (data) => {
     setName(data.name);
-    setColor('#36B0F4');
+    setColor("#36B0F4");
   };
 
-  console.log(color);
+
 
   return (
     <div className="mt-5">
@@ -50,7 +50,7 @@ const Coach = () => {
           <Col className="" md={8}>
             <div className="d-flex justify-content-between mb-3">
               <h2>Daily Goal setting</h2>
-              <button className="btn btn-success">SAVE CHANGES</button>
+              <Button variant="success">SAVE CHANGES</Button>
             </div>
             <article>
               Coach here! Selecting a daily goal will help you stay motivated
@@ -65,18 +65,22 @@ const Coach = () => {
                 hover
               >
                 <tbody>
-                  {coachData.map((data) => (
-                    name === data.name?
-                    <tr style={{background:`${color}`}} onClick={() => handleTable(data)}>
-                      <td>{data.name}</td>
-                      <td>{data.price}</td>
-                    </tr>
-                    :
-                    <tr onClick={() => handleTable(data)}>
-                      <td>{data.name}</td>
-                      <td>{data.price}</td>
-                    </tr>
-                  ))}
+                  {coachData.map((data) =>
+                    name === data.name ? (
+                      <tr
+                        style={{ background: `${color}` }}
+                        onClick={() => handleTable(data)}
+                      >
+                        <td>{data.name}</td>
+                        <td>{data.price}</td>
+                      </tr>
+                    ) : (
+                      <tr onClick={() => handleTable(data)}>
+                        <td>{data.name}</td>
+                        <td>{data.price}</td>
+                      </tr>
+                    )
+                  )}
                 </tbody>
               </Table>
             </div>
