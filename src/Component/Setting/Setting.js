@@ -50,36 +50,7 @@ const textData = [
   },
 ];
 
-const listTextData = [
-  {
-    name: "Account",
-  },
-  {
-    name: "Learning Language",
-  },
-  {
-    name: "Profile",
-  },
-  {
-    name: "Password",
-  },
-  {
-    name: "Duolingo Plus",
-  },
-  {
-    name: "Notification",
-  },
-  {
-    name: "Coach",
-    path: "/setting/coach",
-  },
-  {
-    name: "Progress Sharing",
-  },
-  {
-    name: "Privacy",
-  },
-];
+
 
 const Setting = () => {
   const [toggleButton, setToggleButton] = useState(false);
@@ -152,7 +123,7 @@ const Setting = () => {
           </Col>
 
           <Col md={6}>
-            <AccountList listTextData={listTextData}/>
+            <AccountList/>
           </Col>
         </Row>
       </Container>

@@ -9,9 +9,41 @@ import {
   useHistory,
 } from "react-router-dom";
 
+
+const listTextData = [
+    {
+      name: "Account",
+      path: '/setting/account'
+    },
+    {
+      name: "Learning Language",
+    },
+    {
+      name: "Profile",
+    },
+    {
+      name: "Password",
+    },
+    {
+      name: "Duolingo Plus",
+    },
+    {
+      name: "Notification",
+    },
+    {
+      name: "Coach",
+      path: "/setting/coach",
+    },
+    {
+      name: "Progress Sharing",
+    },
+    {
+      name: "Privacy",
+    },
+  ];
+
 const AccountList = (props) => {
 
-    const listTextData = props.listTextData;
 
   return (
     <div>
