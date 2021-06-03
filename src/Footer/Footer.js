@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <footer>
       <ul
-        style={{ listStyle: "none" }}
-        className="mt-5 d-flex justify-content-around text-secondary"
+        style={{ listStyle: "none", cursor:'pointer' }}
+        className="mt-5 d-md-flex text-center bold justify-content-center justify-content-around text-secondary"
       >
         <li>
           <small>ABOUT</small>
