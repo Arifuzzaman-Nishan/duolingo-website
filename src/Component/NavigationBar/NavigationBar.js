@@ -85,7 +85,7 @@ const NavigationBar = () => {
                   <h5 className='text-center'>Account</h5>
 
                   <Link to = '/'>Your Profile</Link>
-                  <Link to = '/'>Settings</Link>
+                  <Link to = '/setting/account'>Settings</Link>
                   <Link to='/'>Free Plus</Link>
                   <Link to='/'>Help</Link>
                   <Link to='/'>Logout</Link>
