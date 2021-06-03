@@ -15,8 +15,8 @@ const DiscussImg = 'https://d35aaqx5ub95lt.cloudfront.net/vendor/3a52db17e82dec8
 
 const NavigationBar = () => {
   return (
-    <div>
-      <Navbar bg="light" expand="lg">
+    <div className='pb-5'>
+      <Navbar  fixed="top" style={{borderBottom:'1px solid'}} bg="light" expand="lg">
         <Container>
           <Link to='/learn'>
             <img
@@ -28,7 +28,7 @@ const NavigationBar = () => {
           
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav>
+            <Nav className='m-auto'>
               <img
                 className="ml-5 nav-icon-size"
                 src=""
