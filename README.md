@@ -15,11 +15,3 @@ This is React js project. This project created with fontEnd -> React js.
 * Font Awesome
 * React Routing
 
-## Deploy:
- * Firebase
-
-
-
-## Link:
-
-My live website link [Here](https://duolingo-a77ee.web.app/)

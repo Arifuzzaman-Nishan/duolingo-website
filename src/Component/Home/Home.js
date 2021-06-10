@@ -15,9 +15,9 @@ const Home = () => {
       <Container className="">
         <Row >
           <Col  md={6}>
-            <Card
+            <Card 
               className="p-4 m-auto"
-              style={{ width: "20rem", borderRadius: "10px" }}
+              style={{ width: "20rem", borderRadius: "10px"}}
             >
               <Card.Body>
                 <Card.Title className="text-center">
@@ -56,6 +56,7 @@ const Home = () => {
             </Card>
           </Col>
         </Row>
+      
         <HomeMain />
       </Container>
     </div>

@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComments, faStore } from "@fortawesome/free-solid-svg-icons";
 import "./NavigationBar.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import bloodimg from '../../images/blood logo.jpg';
+
+
 
 const brandImg =
   "https://d35aaqx5ub95lt.cloudfront.net/vendor/85a54b84f53cfe25fc8d9ff17e5a60f3.svg";
@@ -62,6 +65,8 @@ const NavigationBar = () => {
 
               <img className="ml-5 " src={pic3} alt="" />
 
+              <img style={{width:'4rem'}} src={bloodimg} alt="" />
+              <a className='mt-3' href="www.facebook.com">facebook</a>
               <div class="dropdown">
                 <img
                   className="ml-5 round nav-icon-size "
